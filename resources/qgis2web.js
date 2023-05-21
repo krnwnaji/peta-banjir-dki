@@ -4,7 +4,7 @@ var geolocateControl = (function (Control) {
     geolocateControl = function (opt_options) {
         var options = opt_options || {};
         var button = document.createElement('button');
-        button.className += ' fa fa-map-marker';
+        button.className += 'fa fa-compass';
         var handleGeolocate = function () {
             if (isTracking) {
                 map.removeLayer(geolocateOverlay);
